@@ -1,0 +1,11 @@
+Use the NASA TechPort API (requires NASA general API key) to fetch project metadata related to “biology”, “microgravity”, “life sciences”, or “space medicine.”
+
+Example endpoint:
+
+https://api.nasa.gov/techport/api/projects?api_key=yehW0VJOYHDKZSkM9uwzT31fwJUNPhccKvFZhWyw
+
+
+
+Extract: title, description, status, startYear, endYear, principalInvestigator, keywords, organization, and projectUrl.
+
+Store results under the source: "NSLSL" category in unified_nasa_spacebio.json.

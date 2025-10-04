@@ -1,0 +1,114 @@
+Metadata API
+Syntax
+https://osdr.nasa.gov/osdr/data/osd/meta/{OSD_STUDY_ID}
+
+Parameters	Data Type	Notes	Values	Required
+{OSD_STUDY_ID}	Integer	Single study accession number	Example: 87	Yes
+Single Study Metadata Request:
+Example: https://osdr.nasa.gov/osdr/data/osd/meta/137
+
+Returns: JSON-formatted response
+Response:
+Note to save space some information has been ommitted with ellipsis (…)
+
+{
+“hits”: 1,
+“input”: “137”,
+“study”: {
+“OSD-137”: {
+“additionalInformation”: {
+“assays”: {
+“a_OSD-137_dna-methylation-profiling_whole-genome-bisulfite-sequencing_illumina-txt”: {
+“header”: […],
+“raw”: […],
+“table”: […]
+},
+“a_OSD-137_molecular-cellular-imaging_microscopy_pannoramic scan (3d histech)-txt”: {…},
+“a_OSD-137_protein-expression-profiling_mass-spectrometry-txt”: {…},
+“a_OSD-137_transcription-profiling_rna-sequencing-(rna-seq)-txt”: {…}
+},
+“description”: {
+“assays”: […],
+“factors”: […]
+},
+“ontologies”: {…},
+“organisms”: {
+“links”: {
+“musmusculus”: “” source=”NCBITAXON”>Mus musculus ”
+},
+“ontologies”: {
+“musmusculus”: {…}
+}
+},
+“samples”: {…}
+},
+“comments”: [],
+“ontologySourceReferences”: […],
+“people”: [],
+“publications”: [],
+“studies”: [
+{
+“assays”: […],
+“characteristicCategories”: […],
+“comments”: [
+{
+“name”: “Acknowledgments”,
+“value”: “Funding for sample processing and sequencing was provided to the GeneLab project by the NASA Space Biology Program Office, Space Life and Physical Sciences Research and Applications Division. Samples from the RR-3 experiment were provided to GeneLab through the Biospecimen Sharing Plan of the NASA Life Sciences Data Archive. We would like to acknowledge the NASA Biospecimen Sharing Program (BSP) for their expertise and efforts in coordinating and collecting all the samples in this study.”
+},
+{ “name”: “DOI”, “value”: “10.26030/9k6w-4c28” },
+{ “name”: “Data Source Accession”, “value”: “” },
+{ “name”: “Data Source Link”, “value”: “” },
+{ “name”: “Experiment Platform”, “value”: “Rodent Habitat” },
+{ “name”: “Flight Program”, “value”: “International Space Station (ISS)” },
+{
+“name”: “Funding”,
+“value”: “This investigation was funded by the ISS National Lab, the NASA Space Biology Program Office, Space Life and Physical Sciences Research and Applications Division and additional funding from the International Space Station Research Integration Office to the Space Biology GeneLab Project”
+},
+{ “name”: “Identifiers”, “value”: “” },
+{ “name”: “Managing NASA Center”, “value”: “Ames Research Center (ARC)” },
+{ “name”: “Mission End”, “value”: “05/11/2016” },
+{ “name”: “Mission Link”, “value”: “https://osdr.nasa.gov/bio/repo/data/missions/SpaceX-8” },
+{ “name”: “Mission Name”, “value”: “SpaceX-8” },
+{ “name”: “Mission Start”, “value”: “04/08/2016” },
+{ “name”: “Project Identifier”, “value”: “RR-3” },
+{ “name”: “Project Link”, “value”: “https://lsda.jsc.nasa.gov/Experiment/exper/13961” },
+{ “name”: “Project Title”, “value”: “Rodent Research 3 (RR3)” },
+{ “name”: “Project Type”, “value”: “Spaceflight Study” },
+{ “name”: “Space Program”, “value”: “NASA” },
+{ “name”: “Study Grant Number”, “value”: “” }
+],
+“description”: “The Rodent Research-3 (RR-3) mission was sponsored by the pharmaceutical company Eli Lilly and Co. and the Center for the Advancement of Science in Space to study the effectiveness of a potential countermeasure for the loss of muscle and bone mass that occurs during spaceflight. Twenty BALB/c, 12-weeks old female mice (ten controls and ten treated) were flown to the ISS and housed in the Rodent Habitat for 39-42 days. Twenty mice of similar age, sex and strain were used for ground controls housed in identical hardware and matching ISS environmental conditions. Basal controls were housed in standard vivarium cages. Spaceflight, ground controls and basal groups had blood collected, then were euthanized, had one hind limb removed, and finally whole carcasses were stored at -80 C until dissection. All mice in this data set received only the control/sham injection.”,
+“factors”: […],
+“identifier”: “OSD-137”,
+“materials”: {…},
+“people”: […],
+“processSequence”: […],
+“protocols”: […],
+“publicReleaseDate”: “28-Aug-2017”,
+“publications”: [
+{
+“authorList”: “Beheshti A, Chakravarty K, Fogle H, Fazelinia H, Silveira WAD, Boyko V, Lai Polo S, Saravia-Butler AM, Hardiman G, Taylor D, Galazka JM, Costes SV”,
+“comments”: [],
+“doi”: “10.1038/s41598-019-55869-2”,
+“pubMedID”: “31844325”,
+“status”: {
+“@id”: “LmdAvi3HYaAIgsfwpY1sWHGrDR5sHm3luQJDg1Ay”,
+“annotationValue”: “published”,
+“comments”: [],
+“termAccession”: “http://www.ebi.ac.uk/efo/EFO_0001796”,
+“termSource”: “EFO”
+},
+“title”: “Multi-omics analysis of multiple missions to space reveal a theme of lipid dysregulation in mouse liver”
+}
+],
+“studyDesignDescriptors”: […],
+“submissionDate”: “04-Aug-2017”,
+“title”: “Rodent Research-3-CASIS: Mouse liver transcriptomic, proteomic, epigenomic and histology data”,
+“unitCategories”: […]
+}
+],
+“version”: 8
+}
+},
+“success”: true
+}
